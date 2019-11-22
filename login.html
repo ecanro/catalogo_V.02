@@ -1,0 +1,99 @@
+<!-- Login e Signup by Eduardo Correia -->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VintageKea - Login/Signup</title>
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/ed_login.css">
+</head>
+<body>
+
+    <div class="ed-loginallouter">
+            <p style="color:white">Só para teste: <br> <a href="/index.html">Homepage_</a><a href="/ideias.html">Ideias_</a><a href="/catalogo.html">Catalogo_</a><a href="/carrinho.html">Carrinho_</a>
+            </p>
+
+
+        <div class="loginandsignup">
+
+            <div class="signupbigcontainer">
+                    <div class="containertitle">
+                        <p class="signupcontainertitletext">Create Account</p>
+                    </div>
+                    <div class="signupcontainercontent">
+                        <div class="signupcontainercontentboxes">
+                            <form action="#">
+                                    <p class="signupcontainernametext">Full Name:</p>
+                                <input class="signupnamebox" type="text" minlength="8" maxlength="40" alt="fullname" placeholder="Use your real name." required title="Please type your full name here. Minimum 8 characters." >
+                                <p class="signupcontaineremailtext">E-mail (username):</p>
+                                <input class="signupemailbox" type="email" minlength="8" maxlength="30" alt="email" placeholder="Using fake or invalid e-mails is prohibited." required title="Use your real email, we need it to contact you if something important about your account or your orders needs your attention.">
+                                <p class="signupcontainerbirthdatetext">Date of birth:</p>
+                                    
+                                        <select name="dayofbirth" required>
+                                            <option value=""></option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                        <select name="monthofbirth" required>
+                                            <option value=""></option>
+                                            <option value="january">January</option>
+                                            <option value="february">February</option>
+                                            <option value="march">March</option>
+                                            <option value="april">April</option>
+                                        </select>
+                                        <select name="yearofbirth" required>
+                                            <option value=""></option>
+                                            <option value="1995">1995</option>
+                                            <option value="1999">1999</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2010">2010</option>
+                                        </select>
+                                        <br>
+                                        <br>
+                                        <a style="cursor:pointer;color:dimgray;font-size:8px" onclick="alert('There are no terms and conditions because we are awesome and have nothing to hide >.> ')">By creating an account you are agreeing to our Terms and Conditions.<br>Click here to learn more.</a>
+                                    
+                                    <div class="signupcontainerbuttons">
+                                        <button class="createaccountbutton" type="submit">Create Account</button>
+                                        <button class="resetbutton" type="reset">Reset Fields</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+
+
+
+            
+            <div class="loginbigcontainer">
+                <div class="containertitle">
+                    <p class="logincontainertitletext">Login</p>
+                </div>
+                <div class="logincontainercontent">
+                    <div class="logincontainercontentboxes">
+                        <p class="loginboxusernametext">Username (e-mail)</p>
+                        <input class="loginemailbox" type="text" alt="email" placeholder="">
+                        <p class="loginboxpasswordtext">Password</p>
+                        <input class="loginpasswordbox" type="password" alt="password" placeholder="">
+                        <p class="forgotpasswordtextlink"><a href="#" style="color:dimgrey; text-decoration:none">Forgot your password? Click here.</a></p>
+                    </div>
+                    <br>
+                    <div class="logincontainerbuttons">
+                        <button class="loginbutton">Log me in!</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

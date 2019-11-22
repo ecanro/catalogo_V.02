@@ -1,0 +1,117 @@
+@font-face{
+    font-family: "ubuntu-regular";   
+    src: url('../fonts/ubuntu-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/ubuntu-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/ubuntu-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/ubuntu-regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/ubuntu-regular.ttf') format('truetype'), /* Safari, Android, iOS */           
+        url('../fonts/ubuntu-regular.svg#svgFontName') format('svg'); /* Legacy iOS */  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.el_contenedor{
+    margin: 0px auto;
+    width: 1200px;
+    text-align: center;
+    font-family: "ubuntu-regular";
+}
+.el_menu{
+    padding: 15px;
+}
+
+.el_slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+.el_slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;    
+    animation: change 20s infinite;
+    animation-direction: alternate;
+}
+
+.el_slider li {
+    list-style: none;
+    width: 100%;
+}
+
+.el_slider img{
+    width: 100%;
+}
+
+.el_texmenu{
+    color: rgb(85, 81, 81);
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.el_flex{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;  
+}
+.el_flexitem{
+    color: white;
+    border: 5px solid ;
+}
+h4, p, h2 {
+    margin: 0;
+    margin-left: 15px;
+    text-align: left;
+}
+
+
+h2{
+    margin-top: 3px;
+    font-size: 28px;  
+    width: 95px;
+    background: rgb(255, 230, 6);
+    box-shadow: 2px 2px 0 0 rgb(248, 2, 2);
+  
+    
+}
+.el_estrellas{
+    color: rgb(255, 230, 6);
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    
+    
+}
+#text{
+    color: rgb(0, 0, 0);
+}
+
+.el_novidade{
+    background: rgb(248, 2, 2);
+    color: white;
+    margin: 0;
+    padding: 3px;
+    width: 22%;
+    margin-left: 15px;
+    text-align: left;
+    border-radius: 8px;
+}
+
+@keyframes change{
+    0%{ margin-left: 0; }
+    20%{ margin-left: 0;  }
+    
+    25%{ margin-left: -100%;  }
+    45%{ margin-left: -100%;  }
+
+    50%{ margin-left: -200%;  }
+    70%{ margin-left: -200%;  }
+
+    75%{ margin-left: -300%;  }
+    100%{ margin-left: -300%;  }
+}

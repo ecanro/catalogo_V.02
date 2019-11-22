@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    }
+.dr_footer a:link {
+    text-decoration: none;
+    color: white;
+  }    
+.dr_footer a:hover, a:active, a:visited {
+    color: white;
+    text-decoration: underline;
+}
+.dr_footer i{
+    padding-right: 6px;
+}
+.dr_footer{
+    background-color: #0058a3;
+    width: 100%;
+    display: block;
+    color: white;
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding-bottom: 30px;
+}
+.dr_footer li {
+    list-style:none;
+}
+.dr_footer__container{
+    width: 1350px;
+    margin: auto;
+    display: block;
+    padding: 0px 48px;
+    font-size: 16px;
+}
+.dr_footer__col12 {
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 16px 8px;
+}
+.dr_footer__lang {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+    padding: 8px 0px;
+}
+.dr_footer__lang--title{
+    display: inline-block;
+    font-weight: 700;
+    padding: 0px 20px 0px 0px;
+    font-size: 18px;
+}
+.dr_footer__lang--item{
+    display: inline-block;
+}
+.dr_footer__menu--container{
+    display: inline-block;
+    width: 100%;
+}
+.dr_footer__menu--col{
+    overflow: hidden;
+    float: left;
+    max-width: 25%;
+    margin-right: 10px;
+}
+.dr_footer__menu--col--col2{
+    padding: 20px 100px 0 10px;
+}
+.dr_footer__menu--title{
+    font-weight: 700;
+    display: inline-block;
+}
+.dr_footer__menu--title h4{
+    display: inline-block;
+}
+.dr_footer__menu--item{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.dr_footer__social{
+    width: 1080px;
+    margin: auto;
+    display: block;
+    padding: 50px 0 20px 0;
+    text-align: center;
+}
+.dr_footer__social--list{
+    display: inline-block;
+    margin: 0px 0px 48px;
+    overflow: hidden;
+}
+.dr_footer__social--item{
+    display: inline-block;
+    padding: 8px 16px;
+}
+.dr_footer__fundo{
+    list-style-type: none;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+}
+.dr_footer__rights{
+    width: 1080px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.dr_footer__menu2{
+    width: 1080px;
+    margin: auto;
+    padding: 0px 24px 24px;
+}
+.dr_footer__menu2--list{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+}
+.dr_footer__menu2--item{
+    display: inline;
+    padding: 10px;
+    border-right: 1px solid white;
+}
+.dr_footer__menu2--item:last-child{
+    border-right: 0px;
+}

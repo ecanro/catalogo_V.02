@@ -1,0 +1,217 @@
+/* Login + Signup CSS by Eduardo Correia */
+
+
+@font-face {
+    font-family: "ubuntu-regular";
+    src: url(/assets/fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: "ubuntu-light";
+    src: url(/assets/fonts/Ubuntu-Light.ttf);
+}
+
+
+/* OUTER BIG CONTAINER, CONTAINS EVERYTHING ----------------------- */
+
+.ed-loginallouter {
+    background-image: url(/assets/img/backgrounds/vintagewoodtexture.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+/* contains both login and signup only */
+
+.loginandsignup {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    transition: all 0.2s;
+}
+
+/* END OF THAT SHIT */
+
+/* start of login big outer container css ------------------------- */
+
+
+.loginbigcontainer {
+    margin: 10px 20px;
+    width: 450px;
+    height: 320px;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.8s;
+    transition-delay: 0.5s;
+}
+
+.containertitle {
+    text-align: center;
+    font-weight: 800;
+    color: rgb(50, 50, 50);
+}
+
+.loginboxusernametext, .loginboxpasswordtext, .signupcontainernametext, .signupcontaineremailtext {
+    color: rgb(50, 50, 50);
+    font-size: 12px;
+    padding-top: 15px;
+}
+
+.logincontainercontent {
+    transform: scale(1);
+    transition: 0.5s;
+    transition-delay: 0.9s;
+}
+
+.loginbigcontainer:hover {
+
+    background-color: rgb(255, 255, 255, 0.9);
+    transition: all 0.4s;
+}
+
+/*
+.loginbigcontainer:hover > .logincontainercontent {
+    transform: scale(1);
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+*/
+
+.loginemailbox, .loginpasswordbox, .signupemailbox, .signuppasswordbox, .signupnamebox {
+    background-color: rgb(240, 240, 240);
+    color: dimgrey;
+    font-size: 16px;
+    border-radius: 5px;
+    line-height: 30px;
+    width: 250px;
+    height: 30px;
+    transition: 0.4s;
+    transition-delay: 1s;
+}
+
+.logincontainerbuttons {
+    margin-top: 0;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.loginbutton, .createaccountbutton, .resetbutton {
+    cursor: pointer;
+    margin: 0px 8px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    transition: all 0.8s;
+}
+
+.forgotpasswordtextlink {
+    margin-top: 5px;
+    font-size: 10px;
+    color: dimgrey;
+    transition: 0.5s;
+}
+
+.loginbutton:active, .forgotpasswordtextlink:active {
+    transform: scale(0.9);
+    transition: all 0.1s;
+}
+
+
+/* end of that shit login css */
+
+/* TEXT BOXES ANIMATIONS AND CSS -------------------------------------------- */
+
+.loginemailbox:active, .loginpasswordbox:active, .signupemailbox:active, .signuppasswordbox:active, .signupnamebox:active {
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
+.loginemailbox:hover, .loginpasswordbox:hover, .signupemailbox:hover, .signuppasswordbox:hover, .signupnamebox:hover {
+
+    transition: 0.2s;
+}
+
+/* end of that boxes animation css */
+
+/* start of signup big outer container css -------------------------------- */
+
+.signupbigcontainer {
+    margin: 10px 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.8s;
+    transition-delay: 0.5s;
+}
+
+.signupcontainercontent {
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+.signupbigcontainer:hover {
+    width: 450px;
+    height: 400px;
+    background-color: rgb(255, 255, 255, 0.9);
+    transition: all 0.4s;
+}
+
+.signupbigcontainer:hover > .logincontainercontent {
+    transform: scale(0);
+    transition: 0.2s;
+}
+
+.signupbigcontainer:hover > .signupcontainercontent {
+    transform: scale(1);
+    transition: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.signupbigcontainer:hover > .loginbigcontainer {
+    width: 200px;
+    height: 50px;
+    transition: 0.2s;
+}
+
+.signupcontainerbuttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 5px;
+    transition: 0.8s;
+}
+
+.createaccountbutton:active, .resetbutton:active {
+    transform: scale(0.9);
+    transition: all 0.1s;
+}
+
+.signupnamebox::placeholder, .signupemailbox::placeholder {
+    font-size: 10px;
+}
+
+

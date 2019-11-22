@@ -1,0 +1,32 @@
+*{
+font: 100% sans-serif;
+line-height: 1.5;
+-webkit-box-direction: normal;
+color: #111;
+font-family: 'Noto IKEA', 'Noto Sans', 'Roboto', 'Open Sans', sans-serif !important;
+box-sizing: inherit;
+outline: none;
+flex-direction: row;
+height: auto;
+overflow: visible;
+font-size: 16px;
+line-height: 1.6;
+font-weight: 400;
+outline: none;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+top: 0;
+bottom: 0;
+left: -100%;
+flex-direction: column;
+transition: transform ease-in-out .3s;
+background: #fff;
+display: inline-block;
+flex-grow: 1;
+position: static;
+width: auto;
+border: 0;
+z-index: 0;
+transform: none;
+}
